@@ -1,0 +1,21 @@
+{
+  "name": "civic-compass",
+  "owner": {
+    "name": "Clinton J. Smith",
+    "url": "https://github.com/clintonjsmith"
+  },
+  "metadata": {
+    "description": "Civic Compass — build a personal values charter and evaluate any ballot against it.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "civic-compass",
+      "source": "./plugins/civic-compass",
+      "description": "Ideology-neutral civic decision-support: a Socratic interview builds your CHARTER.md (ranked values + a decision rule + hard disqualifiers), then a deep-research pass evaluates any ballot against it and produces a sourced VOTING-GUIDE.md.",
+      "version": "0.1.0",
+      "license": "MIT",
+      "keywords": ["voting", "elections", "decision-support", "civic", "ballot", "nonpartisan"]
+    }
+  ]
+}

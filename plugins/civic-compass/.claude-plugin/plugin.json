@@ -1,0 +1,12 @@
+{
+  "name": "civic-compass",
+  "description": "Ideology-neutral civic decision-support (build -> ground -> analyze). /build-charter runs a Socratic interview that produces your CHARTER.md (ranked values + a decision rule + hard disqualifiers). /ground-charter validates it against your own writing/social export, with dated citations. /analyze-ballot deep-researches any ballot, applies your charter with cited reasoning, and writes a VOTING-GUIDE.md. It supplies the method, never the values.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Clinton J. Smith",
+    "url": "https://github.com/clintonjsmith"
+  },
+  "homepage": "https://github.com/clintonjsmith/civic-compass",
+  "license": "MIT",
+  "keywords": ["voting", "elections", "decision-support", "civic", "ballot", "nonpartisan", "election-integrity"]
+}

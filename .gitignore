@@ -1,0 +1,90 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Civic Compass — privacy guard
+#
+# This tool produces, by design, some of the most sensitive files you will ever
+# generate: a written record of your political values and your actual ballot.
+# In many jurisdictions political opinion is a special/sensitive category of
+# personal data. Committing these to a public repo is irreversible — forks,
+# caches, and archive scrapers make un-publishing impossible.
+#
+# Keep these rules in place. If you genuinely intend to publish a charter,
+# force-add that one file deliberately (`git add -f`) rather than loosening
+# this list.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# --- Your charter and its derivatives -------------------------------------
+CHARTER.md
+CHARTER.*.md
+ABOUT-ME.md
+charter/
+charters/
+
+# --- Ballot analyses (your actual votes) ----------------------------------
+VOTING-GUIDE.md
+VOTING-GUIDE.html
+VOTING-GUIDE.*
+voting-guide*/
+ballots/
+
+# --- Ballots and sample ballots you feed in --------------------------------
+# A sample ballot can carry a voter stub, precinct, or voter ID; a photo of a
+# marked ballot shows how you voted. Registrar filenames are unpredictable
+# (SFRA_4_4_3_1.pdf, IMG_4821.jpg), so rather than guess at names, this repo
+# ships no PDFs or images of its own and simply ignores all of them.
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.heic
+*.gif
+*.webp
+ballots/
+sample-ballot*
+
+# --- Social / writing exports used by /ground-charter ----------------------
+# A full X export contains DMs, your phone number, IP + geolocation history,
+# private AI chats, block/mute lists, and ad-targeting inferences.
+x-archive/
+twitter-archive/
+twitter-*.zip
+x-*.zip
+reddit-*.zip
+bluesky-*.zip
+*-export.zip
+data/account.js
+data/direct-message*
+data/like.js
+data/tweets.js
+data/ip-audit.js
+data/phone-number.js
+data/personalization.js
+data/grok-chat-item.js
+
+# --- Local agent / editor state (leaks absolute paths, session logs) -------
+.claude/settings.local.json
+.gstack/
+.obsidian/
+
+# --- Secrets ---------------------------------------------------------------
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+
+# --- Build noise -----------------------------------------------------------
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Re-includes — MUST stay last: git applies the last matching pattern.
+# The rules above are deliberately broad, which would otherwise swallow the
+# scaffolding this plugin ships (CHARTER.template.md, VOTING-GUIDE.template.md,
+# and the fictional example charters). These are not anyone's real data.
+# ─────────────────────────────────────────────────────────────────────────────
+!plugins/civic-compass/templates/
+!plugins/civic-compass/templates/**
+!plugins/civic-compass/examples/
+!plugins/civic-compass/examples/**
