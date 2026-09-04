@@ -40,7 +40,7 @@ the workflow is **build → ground (optional) → analyze**:
 | Command | What it does | Output |
 |---|---|---|
 | **`/build-charter`** | A Socratic interview: your identity, influences, values (ranked into tiers), your decision rule, your hard disqualifiers, your positions, and trusted/distrusted sources. | `CHARTER.md` |
-| **`/ground-charter`** | *(optional)* Reconciles your charter against your own writing — an X/Reddit/Bluesky export, blog, or essays — to confirm, sharpen, add, and **surface contradictions**, with dated citations. Catches what the interview missed. | updated `CHARTER.md` |
+| **`/ground-charter`** | *(optional)* Reconciles your charter against your own writing to confirm, sharpen, add, and **surface contradictions**, with dated citations. Catches what the interview missed. Ships a parser for **X/Twitter** archives; other corpora (Reddit, Bluesky, a blog, a folder of essays) are handled conversationally. | updated `CHARTER.md` |
 | **`/analyze-ballot`** | Ingests your ballot (PDF, photo, sample-ballot URL, or pasted text), enumerates every contest and measure, deep-researches each with citations, applies your charter, and surfaces genuine judgment calls to you. | `VOTING-GUIDE.md` |
 
 Both produce plain Markdown files you own and can edit. Nothing leaves your machine except
